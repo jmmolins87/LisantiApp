@@ -1,1 +1,41 @@
 @import "../../../../styles.scss";
+.cabeceraLisanti {
+    &__navBar {
+        position: relative;
+        &-logo {
+            max-width: 35%;
+            margin: 10px auto;
+            &-img {
+                max-width: 100%;
+            }
+        }
+        &-mobile {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            width: 50px;
+            height: 30px;
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            .hamb {
+                position: absolute;
+                width: 50px;
+                height: 5px;
+                background-color: $colorCoorp;
+                left: 0px;
+                display: block;
+                &:nth-child(1) {
+                    top: 0px;
+                }
+                &:nth-child(2) {
+                    top: 10px;
+                }
+                &:nth-child(3) {
+                    top: 20px;
+                }
+            }
+        }
+    }
+}

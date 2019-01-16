@@ -1,3 +1,26 @@
-<p>
-  navbar works!
-</p>
+<header class="cabeceraLisanti">
+    <nav class="cabeceraLisanti__navBar">
+        <div class="cabeceraLisanti__navBar-logo">
+            <img src="../../../../assets/img/logoLisantiTexto.png" alt="Logo Lisanti" title="Logo Lisanti" class="cabeceraLisanti__navBar-logo-img">
+        </div>
+        <button (click)="abrirMenu = !abrirMenu" type="button" class="cabeceraLisanti__navBar-mobile">
+            <span [ngClass]="abrirMenu ? 'activar' : ''" class="cabeceraLisanti__navBar-mobile hamb"></span>
+            <span [ngClass]="abrirMenu ? 'activar' : ''" class="cabeceraLisanti__navBar-mobile hamb"></span>
+            <span [ngClass]="abrirMenu ? 'activar' : ''" class="cabeceraLisanti__navBar-mobile hamb"></span>
+        </button >
+        <ul class="cabeceraLisanti__navBar-list">
+            <li class="cabeceraLisanti__navBar-list-item">
+                <a href="#" class="cabeceraLisanti__navBar-list-item">Inicio</a>
+            </li>
+            <li class="cabeceraLisanti__navBar-list-item">
+                <a href="#" class="cabeceraLisanti__navBar-list-item">Quíen somos</a>
+            </li>
+            <li class="cabeceraLisanti__navBar-list-item">
+                <a href="#" class="cabeceraLisanti__navBar-list-item">Qué ofrecemos</a>
+            </li>
+            <li class="cabeceraLisanti__navBar-list-item">
+                <a href="#" class="cabeceraLisanti__navBar-list-item">Contáctanos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
