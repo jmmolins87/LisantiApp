@@ -2,8 +2,21 @@
 .cabeceraLisanti {
     &__navBar {
         position: relative;
+        &-social {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            &-face,
+            &-insta {
+                font-size: 25px;
+                margin-left: 15px;
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+            }
+        }
         &-logo {
-            max-width: 35%;
+            max-width: 30%;
             margin: 10px auto;
             &-img {
                 max-width: 100%;
@@ -12,15 +25,18 @@
         &-mobile {
             position: absolute;
             right: 20px;
-            top: 15px;
+            top: 5px;
             width: 50px;
             height: 30px;
             display: block;
             background-color: transparent;
             border: none;
             cursor: pointer;
+            outline: none;
+            z-index: 5;
             .hamb {
                 position: absolute;
+                border-radius: 2px;
                 width: 50px;
                 height: 5px;
                 background-color: $colorCoorp;
@@ -34,6 +50,56 @@
                 }
                 &:nth-child(3) {
                     top: 20px;
+                }
+                &.activo {
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 10px;
+                        background-color: $white;
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 10px;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        &-list {
+            position: absolute;
+            top: -10px;
+            width: 100%;
+            list-style: none;
+            padding-left: 0px;
+            background-color: $colorCoorpStrong;
+            z-index: 1;
+            @extend .tFast;
+            @extend .transMenuMobile;
+            box-shadow: 0px 10px -5px $grey;
+            img {
+                width: 70px;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+            &-item {
+                width: 100%;
+                padding: 15px 0px;
+                border-bottom: 1px solid $white;
+                position: relative;
+                left: 115px;
+                &:nth-child(1) {
+                    padding-bottom: 0px;
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+                &-link {
+                    @extend .menuLinks;
+                    font-size: 14px;
                 }
             }
         }

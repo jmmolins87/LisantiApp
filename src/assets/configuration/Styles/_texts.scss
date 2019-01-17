@@ -41,6 +41,16 @@ a {
     }
 }
 
+.menuLinks {
+    font-size: 14px;
+    color: $white;
+    @extend .tFast;
+    &:hover {
+        color: $grey;
+        text-decoration: none;
+    }
+}
+
 // === Tamaños según dispositivo
 
 /* 
