@@ -15,5 +15,5 @@ $colorCoorp: #bc171e;
 $colorCoorpStrong: #891723;
 $title: transparentize($black, .8);
 $text: transparentize($black, .5);
-$link: transparentize($colorCoorp, .8);
-$linkHover: transparentize($colorCoorpStrong, .8);
+$link: $colorCoorp;
+$linkHover: $colorCoorpStrong;

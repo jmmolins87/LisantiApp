@@ -4,9 +4,34 @@
 
 .transMenuMobile {
     transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     &.activo {
         transform: translateX(0%);
+        -o-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }
+}
+
+
+/* Deshacer transición menú mobile*/
+
+@media only screen and (min-width: 768px) {
+    .menuDesktop {
+        transform: translateX(0%);
+        -o-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+    }
+}
+
+
+/* Transición para los links del menú */
+
+@media only screen and (min-width: 768px) {
+    .linkMenu {}
 }
 
 
@@ -38,4 +63,13 @@
     -o-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+    .tFast {
+        transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
 }
