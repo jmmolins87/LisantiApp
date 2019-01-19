@@ -15,6 +15,21 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .transMenuDesktop {
+        transform: translateX(250px);
+        -o-transform: translateX(250px);
+        -moz-transform: translateX(250px);
+        -webkit-transform: translateX(250px);
+        &.activo {
+            transform: translateX(-377px);
+            -o-transform: translateX(-377px);
+            -moz-transform: translateX(-377px);
+            -webkit-transform: translateX(-377px);
+        }
+    }
+}
+
 
 /* Deshacer transición menú mobile*/
 

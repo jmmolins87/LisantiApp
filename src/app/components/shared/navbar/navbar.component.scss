@@ -104,6 +104,44 @@
                 &-link {
                     @extend .menuLinks;
                     font-size: 14px;
+                    &-icon {
+                        position: absolute;
+                        color: $white;
+                        cursor: pointer;
+                        top: 22px;
+                        left: 100px;
+                        &.activo {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+                &-servicios {
+                    position: relative;
+                    left: -20px;
+                    list-style: none;
+                    height: 0px;
+                    opacity: 0;
+                    &.activo {
+                        height: 100%;
+                        opacity: 1;
+                        @extend .tFast;
+                    }
+                    &-serviciosItem {
+                        color: $white;
+                        &-icon {
+                            margin-right: 10px;
+                            width: 20px;
+                            text-align: center;
+                        }
+                        &-serviciosLink {
+                            color: $white;
+                            @extend .tFast;
+                            &:hover {
+                                color: $grey;
+                                text-decoration: none;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -133,7 +171,7 @@
                 display: flex;
                 width: auto;
                 right: 102px;
-                top: 60px;
+                top: 50px;
                 img {
                     display: none;
                 }
@@ -147,6 +185,38 @@
                         text-align: center;
                         &:hover {
                             color: $linkHover;
+                        }
+                        &-icon {
+                            color: $colorCoorp;
+                            left: 110px;
+                            transform: rotate(90deg);
+                            &.activo {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+                    &-servicios {
+                        position: absolute;
+                        list-style: none;
+                        display: flex;
+                        top: 50px;
+                        @extend .transMenuDesktop;
+                        &-serviciosItem {
+                            color: $colorCoorp;
+                            margin-left: 20px;
+                            width: 150px;
+                            &-icon {
+                                margin-right: 10px;
+                                width: 20px;
+                                text-align: center;
+                            }
+                            &-serviciosLink {
+                                color: $colorCoorp;
+                                &:hover {
+                                    color: $colorCoorpStrong;
+                                    text-decoration: none;
+                                }
+                            }
                         }
                     }
                 }
