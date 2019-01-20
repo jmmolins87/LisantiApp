@@ -2,28 +2,35 @@
     <div class="homeLisanti__carrousel">
         <ngb-carousel *ngIf="images">
             <ng-template ngbSlide>
-                <img class="homeLisanti__carrousel-img" [src]="images[0]" alt="Random first slide">
+                <img class="homeLisanti__carrousel-img" src="../../../assets/img/slider1.jpg" alt="Random first slide">
                 <div class="carousel-caption">
                     <h3>10 seconds between slides...</h3>
                     <p>This carousel uses customized default values.</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
-                <img class="homeLisanti__carrousel-img" [src]="images[1]" alt="Random second slide">
+                <img class="homeLisanti__carrousel-img" src="../../../assets/img/slider2.jpg" alt="Random second slide">
                 <div class="carousel-caption">
                     <h3>No mouse events...</h3>
                     <p>This carousel doesn't pause or resume on mouse events</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
-                <img class="homeLisanti__carrousel-img" [src]="images[2]" alt="Random third slide">
+                <img class="homeLisanti__carrousel-img" src="../../../assets/img/slider3.jpg" alt="Random third slide">
                 <div class="carousel-caption">
                     <h3>No keyboard...</h3>
                     <p>This carousel uses customized default values.</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
-                <img class="homeLisanti__carrousel-img" [src]="images[3]" alt="Random fourth slide">
+                <img class="homeLisanti__carrousel-img" src="../../../assets/img/slider4.jpg" alt="Random fourth slide">
+                <div class="carousel-caption">
+                    <h3>And no wrap after last slide.</h3>
+                    <p>This carousel uses customized default values.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img class="homeLisanti__carrousel-img" src="../../../assets/img/slider5.jpg" alt="Random fourth slide">
                 <div class="carousel-caption">
                     <h3>And no wrap after last slide.</h3>
                     <p>This carousel uses customized default values.</p>
@@ -45,44 +52,44 @@
             <h2 class="homeLisanti__ofering-title-text subTitle">¿Qué podemos ofrecerte?</h2>
         </div>
         <div class="row">
-            <div class="homeLisanti__ofering-content" (click)="deslizarTextoDesayuno = !deslizarTextoDesayuno">
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoDesayuno = !deslizarTextoDesayuno" [ngClass]="deslizarTextoDesayuno ? 'activo' : ''">
                 <h3 class="homeLisanti__ofering-content-title">Desayunos</h3>
                 <div class="homeLisanti__ofering-content-icon">
                     <i class="fas fa-coffee"></i>
                 </div>
                 <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoDesayuno ? 'activo' : ''">
                     <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
-                    <a [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</a>
+                    <a [routerLink]="['desayuno']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</a>
                 </div>
             </div>
-            <div class="homeLisanti__ofering-content" (click)="deslizarTextoMenu = !deslizarTextoMenu">
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoMenu = !deslizarTextoMenu" [ngClass]="deslizarTextoMenu ? 'activo' : ''">
                 <h3 class="homeLisanti__ofering-content-title">Menú y Carta</h3>
                 <div class="homeLisanti__ofering-content-icon">
                     <i class="fas fa-utensils"></i>
                 </div>
                 <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoMenu ? 'activo' : ''">
                     <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
-                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                    <button [routerLink]="['menu']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
                 </div>
             </div>
-            <div class="homeLisanti__ofering-content" (click)="deslizarTextoVino = !deslizarTextoVino">
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoVino = !deslizarTextoVino" [ngClass]="deslizarTextoVino ? 'activo' : ''">
                 <h3 class="homeLisanti__ofering-content-title">Cervezas y Vinos</h3>
                 <div class="homeLisanti__ofering-content-icon">
                     <i class="fas fa-beer"></i>
                 </div>
                 <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoVino ? 'activo' : ''">
                     <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
-                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                    <button [routerLink]="['vino']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
                 </div>
             </div>
-            <div class="homeLisanti__ofering-content" (click)="deslizarTextoCopa = !deslizarTextoCopa">
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoCopa = !deslizarTextoCopa" [ngClass]="deslizarTextoCopa ? 'activo' : ''">
                 <h3 class="homeLisanti__ofering-content-title">Copas</h3>
                 <div class="homeLisanti__ofering-content-icon">
                     <i class="fas fa-cocktail"></i>
                 </div>
                 <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoCopa ? 'activo' : ''">
                     <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
-                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                    <button [routerLink]="['copas']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
                 </div>
             </div>
         </div>
