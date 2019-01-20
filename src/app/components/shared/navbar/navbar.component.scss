@@ -113,7 +113,8 @@
                     &.btn {
                         outline: none;
                         position: relative;
-                        top: -5px;
+                        top: 0px;
+                        left: -13px;
                     }
                     &-icon {
                         position: absolute;
@@ -194,12 +195,17 @@
                         color: $link;
                         padding: 5px 10px;
                         text-align: center;
+                        &.btn {
+                            position: relative;
+                            top: -3px;
+                        }
                         &:hover {
                             color: $linkHover;
                         }
                         &-icon {
                             color: $colorCoorp;
                             left: 110px;
+                            top: 10px;
                             transform: rotate(90deg);
                             &.activo {
                                 transform: rotate(-90deg);

@@ -15,6 +15,7 @@ h6,
 }
 
 .mainTitle {
+    text-align: center;
     font-size: 24px;
     color: $grey;
     font-family: $fontPrincipal;
@@ -22,11 +23,12 @@ h6,
     padding: 5px 10px;
     position: relative;
     margin-bottom: 30px;
+    margin-left: 15px;
     &:before {
         content: '';
         position: absolute;
         top: 0px;
-        left: 100px;
+        left: 0px;
         display: block;
         height: 1px;
         width: 15px;
@@ -36,7 +38,7 @@ h6,
         content: '';
         position: absolute;
         bottom: 0px;
-        right: 100px;
+        right: 0px;
         display: block;
         height: 1px;
         width: 15px;
@@ -47,13 +49,7 @@ h6,
 @media only screen and (min-width: 768px) {
     .mainTitle {
         font-size: 30px;
-        max-width: 225px;
-        &:before {
-            left: 0px;
-        }
-        &:after {
-            right: 0px;
-        }
+        text-align: left;
     }
 }
 
@@ -89,6 +85,16 @@ a {
     }
 }
 
+
+/* Botones */
+
+button {
+    font-family: $fontSecondary;
+}
+
+
+/* Enlaces del menú */
+
 .menuLinks {
     font-size: 14px;
     color: $white;
@@ -97,6 +103,19 @@ a {
         color: $grey;
         text-decoration: none;
     }
+}
+
+
+/* Texto seleccionado */
+
+::-moz-selection {
+    color: $white;
+    background: $colorCoorp;
+}
+
+::selection {
+    color: $white;
+    background: $colorCoorp;
 }
 
 // === Tamaños según dispositivo
