@@ -32,24 +32,24 @@
         <ul class="cabeceraLisanti__navBar-list-item-servicios tFast" [ngClass]="abrirSubmenu ? 'activo' : ''">
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-coffee"></i>
-                <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Desayunos</a>
+                <a [routerLink]="['desayuno']" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Desayunos</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-utensils"></i>
-                <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Menú y carta</a>
+                <a [routerLink]="['menu']" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Menú y carta</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-beer"></i>
-                <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Cervezas y vinos</a>
+                <a [routerLink]="['vino']" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Cervezas y vinos</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-cocktail"></i>
-                <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Copas</a>
+                <a [routerLink]="['copas']" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Copas</a>
             </li>
         </ul>
         </li>
         <li class="cabeceraLisanti__navBar-list-item" routerLinkActive="active">
-            <a href="#" class="cabeceraLisanti__navBar-list-item-link">Contáctanos</a>
+            <a [routerLink]="['contacto']" class="cabeceraLisanti__navBar-list-item-link">Contáctanos</a>
         </li>
         </ul>
     </nav>
