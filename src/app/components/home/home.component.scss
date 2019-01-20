@@ -1,0 +1,51 @@
+.homeLisanti {
+    &__carrousel {
+        display: none;
+    }
+    &__bodyHome {
+        &-title {
+            &-text {
+                text-align: center;
+            }
+        }
+        &-cultura {
+            &-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .homeLisanti {
+        &__carrousel {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            &-img {
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+        &__bodyHome {
+            position: relative;
+            &-title {
+                position: absolute;
+                top: 500px;
+                &-text {
+                    text-align: left;
+                }
+            }
+            &-cultura {
+                position: absolute;
+                top: 600px;
+                margin-bottom: 30px;
+                &-img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

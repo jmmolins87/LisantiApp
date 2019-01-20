@@ -1,3 +1,44 @@
-<p>
-  home works!
-</p>
+<div class="homeLisanti">
+    <div class="homeLisanti__carrousel">
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+                <img class="homeLisanti__carrousel-img" [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                    <h3>10 seconds between slides...</h3>
+                    <p>This carousel uses customized default values.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img class="homeLisanti__carrousel-img" [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                    <h3>No mouse events...</h3>
+                    <p>This carousel doesn't pause or resume on mouse events</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img class="homeLisanti__carrousel-img" [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                    <h3>No keyboard...</h3>
+                    <p>This carousel uses customized default values.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img class="homeLisanti__carrousel-img" [src]="images[3]" alt="Random fourth slide">
+                <div class="carousel-caption">
+                    <h3>And no wrap after last slide.</h3>
+                    <p>This carousel uses customized default values.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <div class="container homeLisanti__bodyHome">
+        <div class="row homeLisanti__bodyHome-title">
+            <h1 class="col homeLisanti__bodyHome-title-text mainTitle">Cultura Lisanti</h1>
+        </div>
+        <div class="row homeLisanti__bodyHome-cultura">
+            <p class="col-12 col-md-6 homeLisanti__bodyHome-cultura-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ipsum quidem nulla, impedit unde omnis soluta modi assumenda ducimus, reiciendis deleniti quibusdam odio rerum aspernatur suscipit provident placeat, quis nam?
+            </p>
+            <img src="../../../assets/img/1.jpg" alt="" class="col-12 col-md-6 homeLisanti__bodyHome-cultura-img">
+        </div>
+    </div>
+</div>
