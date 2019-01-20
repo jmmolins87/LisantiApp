@@ -53,6 +53,11 @@
                         bottom: 10px;
                         right: 10px;
                         z-index: 2;
+                        @extend .tFast;
+                        &:hover {
+                            color: $grey;
+                            text-decoration: none;
+                        }
                     }
                 }
             }

@@ -14,6 +14,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { DesayunoComponent } from './components/desayuno/desayuno.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { VinoComponent } from './components/vino/vino.component';
+import { CopasComponent } from './components/copas/copas.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ContactoComponent,
+    DesayunoComponent,
+    MenuComponent,
+    VinoComponent,
+    CopasComponent
   ],
   imports: [
     BrowserModule,
