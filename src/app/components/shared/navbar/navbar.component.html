@@ -20,35 +20,35 @@
             <li class="cabeceraLisanti__navBar-list-logo">
                 <img src="../../../../assets/img/LogoLisantiVertical.png" alt="Logo Lisanti" title="Logo Lisanti" class="cabeceraLisanti__navBar-list-logo-img">
             </li>
-            <li class="cabeceraLisanti__navBar-list-item">
-                <a href="#" class="cabeceraLisanti__navBar-list-item-link">Inicio</a>
+            <li class="cabeceraLisanti__navBar-list-item" routerLinkActive="active">
+                <a [routerLink]="['home']" class="cabeceraLisanti__navBar-list-item-link">Inicio</a>
             </li>
-            <li class="cabeceraLisanti__navBar-list-item">
-                <a href="#" class="cabeceraLisanti__navBar-list-item-link">Quíen somos</a>
+            <li class="cabeceraLisanti__navBar-list-item" routerLinkActive="active">
+                <a [routerLink]="['about']"  class="cabeceraLisanti__navBar-list-item-link">Quíen somos</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item">
                 <a href="#" class="cabeceraLisanti__navBar-list-item-link" (click)="abrirSubmenu = !abrirSubmenu">Qué ofrecemos
                 <i class="cabeceraLisanti__navBar-list-item-link-icon fas fa-chevron-down tFast" [ngClass]="abrirSubmenu ? 'activo' : ''"></i></a>
                 <ul class="cabeceraLisanti__navBar-list-item-servicios tFast" [ngClass]="abrirSubmenu ? 'activo' : ''">
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem">
+                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                         <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-coffee"></i>
                         <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Desayunos</a>
                     </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem">
+                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                         <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-utensils"></i>
                         <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Menú y carta</a>
                     </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem">
+                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                         <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-beer"></i>
                         <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Cervezas y vinos</a>
                     </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem">
+                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">
                         <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-cocktail"></i>
                         <a href="#" class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink">Copas</a>
                     </li>
                 </ul>
             </li>
-            <li class="cabeceraLisanti__navBar-list-item">
+            <li class="cabeceraLisanti__navBar-list-item" routerLinkActive="active">
                 <a href="#" class="cabeceraLisanti__navBar-list-item-link">Contáctanos</a>
             </li>
         </ul>
