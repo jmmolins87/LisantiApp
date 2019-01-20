@@ -98,6 +98,9 @@
                 border-bottom: 1px solid $white;
                 position: relative;
                 left: 115px;
+                &.active {
+                    font-weight: bold;
+                }
                 &:nth-child(1) {
                     padding-bottom: 0px;
                 }
@@ -107,12 +110,17 @@
                 &-link {
                     @extend .menuLinks;
                     font-size: 14px;
+                    &.btn {
+                        outline: none;
+                        position: relative;
+                        top: -5px;
+                    }
                     &-icon {
                         position: absolute;
                         color: $white;
                         cursor: pointer;
-                        top: 22px;
-                        left: 100px;
+                        top: 12px;
+                        right: -5px;
                         &.activo {
                             transform: rotate(-180deg);
                         }

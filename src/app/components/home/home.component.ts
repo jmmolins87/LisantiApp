@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     config.pauseOnHover = false;
   }
 
+
   lat: number = 40.46592709999999;
   lng: number = -3.6921363000000156;
   zoom: number = 16;

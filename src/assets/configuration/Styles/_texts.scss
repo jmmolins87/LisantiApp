@@ -16,10 +16,12 @@ h6,
 
 .mainTitle {
     font-size: 24px;
+    color: $grey;
     font-family: $fontPrincipal;
     font-weight: bold;
     padding: 5px 10px;
     position: relative;
+    margin-bottom: 30px;
     &:before {
         content: '';
         position: absolute;
@@ -45,6 +47,7 @@ h6,
 @media only screen and (min-width: 768px) {
     .mainTitle {
         font-size: 30px;
+        max-width: 225px;
         &:before {
             left: 0px;
         }
@@ -56,7 +59,14 @@ h6,
 
 .subTitle {
     padding: 5px;
+    margin-bottom: 5px;
     border-bottom: 1px solid $colorCoorp;
+}
+
+@media only screen and (min-width: 768px) {
+    .subTitle {
+        margin-bottom: 15px;
+    }
 }
 
 

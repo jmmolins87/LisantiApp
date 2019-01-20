@@ -19,7 +19,6 @@
     }
     &__map {
         position: relative;
-        top: 150px;
         margin-bottom: 30px;
         agm-map {
             height: 300px;
@@ -35,8 +34,8 @@
         &__carrousel {
             display: block;
             width: 100%;
-            position: absolute;
-            top: 0px;
+            position: relative;
+            top: -140px;
             &-img {
                 width: 100vw;
                 height: 100vh;
@@ -45,25 +44,15 @@
         &__bodyHome {
             position: relative;
             &-title {
-                position: absolute;
-                top: 500px;
                 &-text {
                     text-align: left;
                 }
             }
             &-cultura {
-                position: absolute;
-                top: 600px;
                 margin-bottom: 30px;
                 &-img {
                     height: 300px;
                 }
-            }
-        }
-        &__map {
-            top: 950px;
-            &-title {
-                top: 930px;
             }
         }
     }
