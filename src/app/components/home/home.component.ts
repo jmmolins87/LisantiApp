@@ -9,6 +9,10 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent implements OnInit {
 
+  deslizarTextoDesayuno: boolean = false;
+  deslizarTextoMenu: boolean = false;
+  deslizarTextoVino: boolean = false;
+  deslizarTextoCopa: boolean = false;
 
   images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 

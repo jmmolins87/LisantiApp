@@ -1,1 +1,17 @@
 // === Botones
+.btnDefault {
+    border: 2px solid $colorCoorpStrong;
+    background-color: $colorCoorp;
+    padding: 5px 15px;
+    color: $white;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+    .btnDefault {
+        font-size: 14px;
+    }
+}

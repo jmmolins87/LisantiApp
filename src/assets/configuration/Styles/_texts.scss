@@ -55,13 +55,13 @@ h6,
 
 .subTitle {
     padding: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
     border-bottom: 1px solid $colorCoorp;
 }
 
 @media only screen and (min-width: 768px) {
     .subTitle {
-        margin-bottom: 15px;
+        margin: 15px;
     }
 }
 

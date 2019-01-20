@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  abrirMenu = false;
-  abrirSubmenu = false;
+  abrirMenu: boolean  = false;
+  abrirSubmenu: boolean = false;
 
   constructor() { }
 

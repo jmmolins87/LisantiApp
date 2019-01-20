@@ -30,6 +30,36 @@
     }
 }
 
+@media only screen and (min-width: 998px) {
+    .transMenuDesktop {
+        transform: translateX(250px);
+        -o-transform: translateX(250px);
+        -moz-transform: translateX(250px);
+        -webkit-transform: translateX(250px);
+        &.activo {
+            transform: translateX(-377px);
+            -o-transform: translateX(-377px);
+            -moz-transform: translateX(-377px);
+            -webkit-transform: translateX(-377px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .transMenuDesktop {
+        transform: translateX(250px);
+        -o-transform: translateX(250px);
+        -moz-transform: translateX(250px);
+        -webkit-transform: translateX(250px);
+        &.activo {
+            transform: translateX(-377px);
+            -o-transform: translateX(-377px);
+            -moz-transform: translateX(-377px);
+            -webkit-transform: translateX(-377px);
+        }
+    }
+}
+
 
 /* Deshacer transición menú mobile*/
 
@@ -60,6 +90,36 @@
     -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
 }
 
+@media only screen and (min-width: 768px) {
+    .formImg {
+        backface-visibility: hidden;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -o-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -moz-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .formImg {
+        backface-visibility: hidden;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -o-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -moz-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .formImg {
+        backface-visibility: hidden;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -o-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -moz-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+    }
+}
+
 
 /* Transición lenta */
 
@@ -68,6 +128,33 @@
     -o-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
+}
+
+@media only screen and (min-width: 768) {
+    .tSlow {
+        transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 998) {
+    .tSlow {
+        transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200) {
+    .tSlow {
+        transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+    }
 }
 
 
@@ -81,6 +168,24 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .tFast {
+        transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .tFast {
+        transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
     .tFast {
         transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;

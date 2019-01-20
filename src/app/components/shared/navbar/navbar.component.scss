@@ -189,8 +189,12 @@
                 }
                 &-item {
                     width: auto;
+                    padding: 0;
                     margin-right: 40px;
                     border-bottom: 0px;
+                    &.active {
+                        border-bottom: 1px solid $colorCoorpStrong;
+                    }
                     &-link {
                         color: $link;
                         padding: 5px 10px;

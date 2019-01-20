@@ -40,8 +40,59 @@
             <img src="../../../assets/img/1.jpg" alt="Cultura Lisanti" title="Cultura Lisanti" class="col-12 col-md-6 homeLisanti__bodyHome-cultura-img formImg">
         </div>
     </section>
+    <section class="container homeLisanti__ofering">
+        <div class="row homeLisanti__ofering-title">
+            <h2 class="homeLisanti__ofering-title-text subTitle">¿Qué podemos ofrecerte?</h2>
+        </div>
+        <div class="row">
+            <div class="homeLisanti__ofering-content" (click)="deslizarTextoDesayuno = !deslizarTextoDesayuno">
+                <h3 class="homeLisanti__ofering-content-title">Desayunos</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoDesayuno ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content" (click)="deslizarTextoMenu = !deslizarTextoMenu">
+                <h3 class="homeLisanti__ofering-content-title">Menú y Carta</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoMenu ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content" (click)="deslizarTextoVino = !deslizarTextoVino">
+                <h3 class="homeLisanti__ofering-content-title">Cervezas y Vinos</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-beer"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoVino ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content" (click)="deslizarTextoCopa = !deslizarTextoCopa">
+                <h3 class="homeLisanti__ofering-content-title">Copas</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-cocktail"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoCopa ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['about']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="homeLisanti__map">
-        <h2 class="container homeLisanti__map-title subTitle">¿Dónde encontrarnos?</h2>
+        <div class="container">
+            <div class="row homeLisanti__map-title">
+                <h2 class="homeLisanti__map-title-text subTitle">¿Dónde encontrarnos?</h2>
+            </div>
+        </div>
         <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
         </agm-map>

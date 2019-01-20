@@ -1,53 +1,105 @@
-@import "../../../styles.scss";
-.homeLisanti {
-    &__carrousel {
-        display: none;
-    }
-    &__bodyHome {
-        &-cultura {
-            &-img {
-                width: 100%;
-                height: 200px;
-            }
-        }
-    }
-    &__map {
-        position: relative;
-        margin-bottom: 30px;
-        agm-map {
-            height: 300px;
-        }
-        &-title {
-            top: 140px;
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) {
+    @import "../../../styles.scss";
     .homeLisanti {
         &__carrousel {
-            display: block;
-            width: 100%;
-            position: relative;
-            top: -140px;
-            &-img {
-                width: 100vw;
-                height: 100vh;
-            }
+            display: none;
         }
         &__bodyHome {
-            position: relative;
-            &-title {
-                &-text {
-                    text-align: left;
+            &-cultura {
+                &-img {
+                    width: 100%;
+                    height: 200px;
                 }
             }
-            &-cultura {
-                margin-bottom: 30px;
+        }
+        &__ofering {
+            &-content {
+                cursor: pointer;
+                position: relative;
+                width: 100%;
+                border: 1px solid $grey-light;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 5px 15px;
+                overflow: hidden;
+                &-title {
+                    width: 100%;
+                    text-align: center;
+                }
+                &-icon {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 50px;
+                }
+                &-bg {
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparentize($color: $black, $amount: .2);
+                    padding: 10px;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 1;
+                    transform: translateY(100%);
+                    &.activo {
+                        transform: translateY(0%);
+                    }
+                    &-text {
+                        color: $white;
+                    }
+                    &-btn {
+                        width: 200px;
+                        position: absolute;
+                        left: 10px;
+                        bottom: 10px;
+                        right: 10px;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        &__map {
+            position: relative;
+            margin-bottom: 30px;
+            agm-map {
+                height: 300px;
+            }
+            &-title {
+                top: 140px;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .homeLisanti {
+            &__carrousel {
+                display: block;
+                width: 100%;
+                position: relative;
+                top: -140px;
                 &-img {
-                    height: 300px;
+                    width: 100vw;
+                    height: 100vh;
+                }
+            }
+            &__bodyHome {
+                position: relative;
+                &-title {
+                    &-text {
+                        text-align: left;
+                    }
+                }
+                &-cultura {
+                    margin-bottom: 30px;
+                    &-img {
+                        height: 300px;
+                    }
+                }
+            }
+            &__ofering {
+                &-content {
+                    width: 24%;
+                    margin: 10px auto;
                 }
             }
         }
     }
-}
