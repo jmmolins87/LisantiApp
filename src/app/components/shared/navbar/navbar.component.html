@@ -27,7 +27,7 @@
                 <a [routerLink]="['about']"  class="cabeceraLisanti__navBar-list-item-link">Quíen somos</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item">
-                <a href="#" class="cabeceraLisanti__navBar-list-item-link" (click)="abrirSubmenu = !abrirSubmenu">Qué ofrecemos
+                <a [routerLink]="['#']" class="cabeceraLisanti__navBar-list-item-link" (click)="abrirSubmenu = !abrirSubmenu">Qué ofrecemos
                 <i class="cabeceraLisanti__navBar-list-item-link-icon fas fa-chevron-down tFast" [ngClass]="abrirSubmenu ? 'activo' : ''"></i></a>
                 <ul class="cabeceraLisanti__navBar-list-item-servicios tFast" [ngClass]="abrirSubmenu ? 'activo' : ''">
                     <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem" routerLinkActive="active">

@@ -1,5 +1,6 @@
 @import "../../../../styles.scss";
 .cabeceraLisanti {
+    background-color: transparentize($white, $amount: .8);
     &__navBar {
         position: relative;
         &-social {
