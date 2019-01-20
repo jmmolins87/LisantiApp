@@ -1,8 +1,10 @@
+@import "../../../styles.scss";
 .homeLisanti {
     &__carrousel {
         display: none;
     }
     &__bodyHome {
+        background-color: $white;
         &-title {
             &-text {
                 text-align: center;
@@ -13,6 +15,17 @@
                 width: 100%;
                 height: 200px;
             }
+        }
+    }
+    &__map {
+        position: relative;
+        top: 150px;
+        margin-bottom: 30px;
+        agm-map {
+            height: 300px;
+        }
+        &-title {
+            top: 140px;
         }
     }
 }
@@ -45,6 +58,12 @@
                 &-img {
                     height: 300px;
                 }
+            }
+        }
+        &__map {
+            top: 950px;
+            &-title {
+                top: 930px;
             }
         }
     }

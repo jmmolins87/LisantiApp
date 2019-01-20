@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 // ng-bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,7 +26,10 @@ import { FooterComponent } from './components/shared/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDfohgODjA7L4Xr-fF_a9pr5a5AZxDFF6I'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
