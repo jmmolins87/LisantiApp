@@ -1,7 +1,10 @@
 @import "../../../../styles.scss";
 .cabeceraLisanti {
-    background-color: transparentize($white, $amount: .8);
+    background-color: transparentize($white, $amount: .3);
     height: 140px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     &__navBar {
         position: relative;
         &-social {
@@ -27,6 +30,9 @@
             z-index: 1;
             &-img {
                 max-width: 100%;
+            }
+            &.page-scroll-header {
+                max-width: 55px
             }
         }
         &-mobile {
@@ -158,6 +164,12 @@
             }
         }
     }
+    &.page-scroll-header {
+        background-color: transparentize($white, $amount: .1);
+        height: 70px;
+        box-shadow: 0px 5px 10px $grey;
+        z-index: 10;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -169,6 +181,9 @@
                 right: 35px;
                 top: 20px;
                 width: 60px;
+                &.page-scroll-header {
+                    top: 1px;
+                }
             }
             &-logo {
                 position: absolute;
