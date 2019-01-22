@@ -5,6 +5,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 10;
     &__navBar {
         position: relative;
         &-social {
@@ -31,7 +32,7 @@
             &-img {
                 max-width: 100%;
             }
-            &.page-scroll-header {
+            &.sticky {
                 max-width: 55px
             }
         }
@@ -143,6 +144,9 @@
                         height: 100%;
                         opacity: 1;
                         @extend .tFast;
+                        &.sticky {
+                            top: 30px;
+                        }
                     }
                     &-serviciosItem {
                         color: $white;
@@ -164,11 +168,10 @@
             }
         }
     }
-    &.page-scroll-header {
+    &.sticky {
         background-color: transparentize($white, $amount: .1);
         height: 70px;
-        box-shadow: 0px 5px 10px $grey;
-        z-index: 10;
+        box-shadow: 0px 5px 10px $black;
     }
 }
 
@@ -181,7 +184,7 @@
                 right: 35px;
                 top: 20px;
                 width: 60px;
-                &.page-scroll-header {
+                &.sticky {
                     top: 1px;
                 }
             }
@@ -255,6 +258,10 @@
                             }
                         }
                     }
+                }
+                &.sticky {
+                    right: 204px;
+                    top: 5px;
                 }
             }
         }

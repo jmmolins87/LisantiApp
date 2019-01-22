@@ -1,6 +1,6 @@
-<header class="cabeceraLisanti tSlow" [ngClass]="{' page-scroll-header': isScrolled}">
+<header class="cabeceraLisanti tSlow" id="navBar">
     <nav class="cabeceraLisanti__navBar ">
-        <div class="cabeceraLisanti__navBar-social " [ngClass]="abrirMenu ? 'activo' : '' ">
+        <div class="cabeceraLisanti__navBar-social tSlow" [ngClass]="abrirMenu ? 'activo' : '' " id="social">
             <a href="# " class="cabeceraLisanti__navBar-social-face ">
                 <i class="cabeceraLisanti__navBar-social-face-icon fab fa-facebook-f "></i>
             </a>
@@ -8,15 +8,15 @@
                 <i class="cabeceraLisanti__navBar-social-face-icon fab fa-instagram "></i>
             </a>
         </div>
-        <div class="cabeceraLisanti__navBar-logo tSlow" [ngClass]="{' page-scroll-header': isScrolled}">
-            <img src="../../../../assets/img/logoLisantiTexto.png " alt="Logo Lisanti " title="Logo Lisanti " class="cabeceraLisanti__navBar-logo-img ">
+        <div class="cabeceraLisanti__navBar-logo tSlow" id="logo">
+            <img src="../../../../assets/img/logoLisanti.png " alt="Logo Lisanti " title="Logo Lisanti " class="cabeceraLisanti__navBar-logo-img ">
         </div>
         <button (click)="abrirMenu=! abrirMenu " type="button " class="cabeceraLisanti__navBar-mobile ">
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
         </button >
-        <ul class="cabeceraLisanti__navBar-list " [ngClass]="abrirMenu ? 'activo' : '' ">
+        <ul class="cabeceraLisanti__navBar-list " [ngClass]="abrirMenu ? 'activo' : '' " id="menuPrincipal">
             <li class="cabeceraLisanti__navBar-list-logo" >
                 <img src="../../../../assets/img/LogoLisantiVertical.png " alt="Logo Lisanti " title="Logo Lisanti " class="cabeceraLisanti__navBar-list-logo-img ">
             </li>
@@ -29,7 +29,7 @@
             <li class="cabeceraLisanti__navBar-list-item ">
                 <button type="button " class="cabeceraLisanti__navBar-list-item-link btn " (click)="abrirSubmenu=! abrirSubmenu ">Qué ofrecemos
                 <i class="cabeceraLisanti__navBar-list-item-link-icon fas fa-chevron-down tFast " [ngClass]="abrirSubmenu ? 'activo' : '' "></i></button>
-        <ul class="cabeceraLisanti__navBar-list-item-servicios tFast " [ngClass]="abrirSubmenu ? 'activo' : '' ">
+        <ul class="cabeceraLisanti__navBar-list-item-servicios tFast " [ngClass]="abrirSubmenu ? 'activo' : '' " id="menuOffering">
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-coffee "></i>
                 <a [routerLink]="[ 'desayuno'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Desayunos</a>
