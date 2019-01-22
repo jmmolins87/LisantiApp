@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  abrirMenu: boolean  = false;
+  abrirMenu: boolean = false;
   abrirSubmenu: boolean = false;
 
 
@@ -22,16 +22,18 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  onScroll(evt) {
-    //window object can be wrapper in a service but for now we directly use it
-    this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
-    if(this.currPos >= this.changePos ) {
-        this.isScrolled = true;
-    } else {
-        this.isScrolled = false;
-    }
-
   ngOnInit() {
   }
 
+  onScroll(evt) {
+    // window object can be wrapper in a service but for now we directly use it
+    this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
+    if (this.currPos >= this.changePos) {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
+
+
+  }
 }
