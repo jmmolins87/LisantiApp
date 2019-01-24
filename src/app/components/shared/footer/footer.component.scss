@@ -1,5 +1,39 @@
 @import "../../../../styles.scss";
 .footerLisanti {
     background-color: $colorCoorp;
-    padding: 10px 0px;
+    position: relative;
+    &__content {
+        padding: 10px 0px;
+        &-contact {
+            padding: 10px 0px;
+            &-tlf,
+            &-email,
+            &-direccion {
+                &-link {
+                    color: $white;
+                    &:hover {
+                        color: $grey;
+                        text-decoration: none;
+                    }
+                    &-icon {
+                        width: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &-social {
+            &-icon {
+                display: flex;
+                &-face,
+                &-isnta {
+                    color: $white;
+                }
+            }
+        }
+        // &-info {
+        //     padding: 10px 0px;
+        //     border-top: 1px solid $grey-light;
+        // }
+    }
 }

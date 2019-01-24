@@ -145,7 +145,7 @@
                         opacity: 1;
                         @extend .tFast;
                         &.sticky {
-                            top: 30px;
+                            top: 0px;
                         }
                     }
                     &-serviciosItem {
@@ -205,6 +205,10 @@
                 img {
                     display: none;
                 }
+                &.sticky {
+                    right: 204px;
+                    top: 5px;
+                }
                 &-item {
                     width: auto;
                     padding: 0;
@@ -240,6 +244,11 @@
                         display: flex;
                         top: 50px;
                         @extend .transMenuDesktop;
+                        &.activo {
+                            &.sticky {
+                                top: 30px;
+                            }
+                        }
                         &-serviciosItem {
                             color: $colorCoorp;
                             margin-left: 20px;
@@ -258,10 +267,6 @@
                             }
                         }
                     }
-                }
-                &.sticky {
-                    right: 204px;
-                    top: 5px;
                 }
             }
         }
