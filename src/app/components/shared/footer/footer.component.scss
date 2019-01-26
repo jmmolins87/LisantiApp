@@ -4,13 +4,16 @@
     position: relative;
     &__content {
         padding: 10px 0px;
+        display: flex;
         &-contact {
             padding: 10px 0px;
+            width: 45%;
             &-tlf,
             &-email,
             &-direccion {
                 &-link {
                     color: $white;
+                    text-align: center;
                     &:hover {
                         color: $grey;
                         text-decoration: none;
@@ -22,12 +25,22 @@
                 }
             }
         }
+        &-logo {
+            &-img {
+                width: 100%;
+            }
+        }
         &-social {
-            &-icon {
-                display: flex;
-                &-face,
-                &-isnta {
-                    color: $white;
+            text-align: right;
+            &-icons {
+                &-icon {
+                    font-size: 40px;
+                    justify-content: flex-end;
+                    &-face,
+                    &-insta {
+                        color: $white;
+                        margin-left: 30px;
+                    }
                 }
             }
         }
@@ -35,5 +48,57 @@
         //     padding: 10px 0px;
         //     border-top: 1px solid $grey-light;
         // }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footerLisanti {
+        background-color: $colorCoorp;
+        position: relative;
+        &__content {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-contact {
+                padding: 10px 0px;
+                width: 45%;
+                &-tlf,
+                &-email,
+                &-direccion {
+                    &-link {
+                        color: $white;
+                        text-align: center;
+                        &:hover {
+                            color: $grey;
+                            text-decoration: none;
+                        }
+                        &-icon {
+                            width: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            &-social {
+                text-align: right;
+                &-icons {
+                    &-icon {
+                        font-size: 40px;
+                        justify-content: flex-end;
+                        align-items: center;
+                        &-face,
+                        &-insta {
+                            color: $white;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+            // &-info {
+            //     padding: 10px 0px;
+            //     border-top: 1px solid $grey-light;
+            // }
+        }
     }
 }
