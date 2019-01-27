@@ -12,10 +12,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'home/desayuno', component: DesayunoComponent },
-  { path: 'home/menu', component: MenuComponent },
-  { path: 'home/vino', component: VinoComponent },
-  { path: 'home/copas', component: CopasComponent },
+  { path: 'desayuno', component: DesayunoComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'vino', component: VinoComponent },
+  { path: 'copas', component: CopasComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
