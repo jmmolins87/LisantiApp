@@ -5,9 +5,10 @@
     &__content {
         padding: 10px 0px;
         display: flex;
+        border-bottom: 1px solid $grey-light;
+        margin-bottom: 20px;
         &-contact {
-            padding: 10px 0px;
-            width: 45%;
+            text-align: center;
             &-tlf,
             &-email,
             &-direccion {
@@ -27,11 +28,15 @@
         }
         &-logo {
             &-img {
-                width: 100%;
+                max-width: 100%;
             }
         }
         &-social {
-            text-align: right;
+            text-align: left;
+            margin-top: 40px;
+            &-text {
+                color: $white;
+            }
             &-icons {
                 &-icon {
                     font-size: 40px;
@@ -44,25 +49,43 @@
                 }
             }
         }
-        // &-info {
-        //     padding: 10px 0px;
-        //     border-top: 1px solid $grey-light;
-        // }
+    }
+    &__info {
+        padding-bottom: 10px;
+        &-copy {
+            &-text {
+                text-align: center;
+                font-size: 14px;
+                color: $white;
+            }
+        }
+        &-powered {
+            text-align: center;
+            &-text {
+                text-align: center;
+                font-size: 12px;
+                color: $white;
+            }
+            &-link {
+                &-logo {
+                    width: 30%;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 768px) {
     .footerLisanti {
-        background-color: $colorCoorp;
-        position: relative;
         &__content {
             padding: 10px 0px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             &-contact {
-                padding: 10px 0px;
-                width: 45%;
+                text-align: left;
+                margin-top: 50px;
                 &-tlf,
                 &-email,
                 &-direccion {
@@ -95,10 +118,28 @@
                     }
                 }
             }
-            // &-info {
-            //     padding: 10px 0px;
-            //     border-top: 1px solid $grey-light;
-            // }
+        }
+        &__info {
+            &-copy {
+                &-text {
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+            &-powered {
+                &-text {
+                    text-align: right;
+                    font-size: 14px;
+                }
+                &-link {
+                    position: absolute;
+                    top: -20px;
+                    &-logo {
+                        width: 40%;
+                        margin-top: 10px;
+                    }
+                }
+            }
         }
     }
 }
