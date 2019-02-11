@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+.homeLisanti {
+    margin-top: 160px;
+    &__carrousel {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .homeLisanti {
+        margin-top: 0px;
+        &__carrousel {
+            z-index: -1;
+            display: block;
+            width: 100%;
+            position: relative;
+            &-img {
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+    }
+}
