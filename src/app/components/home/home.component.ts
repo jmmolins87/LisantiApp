@@ -9,10 +9,6 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent implements OnInit {
 
-  // Loading
-
-  loading: boolean;
-
   // Offering
 
   deslizarTextoDesayuno: boolean;
@@ -30,9 +26,7 @@ export class HomeComponent implements OnInit {
     lng: number;
     zoom: number;
 
-  constructor(config: NgbCarouselConfig) {
-    // Loading
-    this.loading = true;
+  constructor( config: NgbCarouselConfig ) {
 
     // customize default values of carousels used by this component tree
     config.interval = 10000;
