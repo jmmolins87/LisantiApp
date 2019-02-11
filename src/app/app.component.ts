@@ -7,11 +7,24 @@ import { Event, Router, NavigationStart, NavigationCancel, NavigationEnd } from 
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
+
+  constructor ( private _router: Router ) {
+    this._router.events.subscribe(( routerEvent: Event ) => {
+      if( routerEvent instanceof NavigationStart ) {
+        this.loading = true;
+      }
+
+      if( routerEvent instanceof NavigationEnd ) {
+        this.loading = false;
+      }
+    });
+    this.loading = true;
+  }
   title = "my-app";
 
   // Loader
-
-  loading: boolean;
+  
+  loading = true;
 
   // Resize NavBar
 
@@ -40,20 +53,6 @@ export class AppComponent {
       menuPrincipal.classList.remove("sticky");
       menuOffering.classList.remove("sticky");
     }
-  }
-
-  constructor ( private _router: Router ) {
-    this.loading = true;
-    this._router.events.subscribe(( routerEvent: Event ) => {
-      if( routerEvent instanceof NavigationStart ) {
-        this.loading = true;
-      }
-
-      if( routerEvent instanceof NavigationEnd ) {
-        this.loading = false;
-      }
-    });
-    this.loading = true;
   }
 
 }
