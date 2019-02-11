@@ -1,0 +1,73 @@
+@import "../../../../styles.scss";
+.loaderLisanti {
+    z-index: 11;
+    background-color: transparentize($color: $white, $amount: 0);
+    width: 100vw;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    &__loader {
+        &-img {
+            width: 50%;
+            position: relative;
+            left: 25%;
+        }
+        &-bar {
+            height: 4px;
+            margin: 20px auto;
+            width: 75%;
+            position: relative;
+            overflow: hidden;
+            background-color: #ddd;
+            border-radius: 5px;
+            &:before {
+                display: block;
+                position: absolute;
+                content: "";
+                left: -200px;
+                width: 200px;
+                height: 4px;
+                background-color: $colorCoorp;
+                animation: loading 2s linear infinite;
+            }
+        }
+        @keyframes loading {
+            from {
+                left: -200px;
+                width: 30%;
+            }
+            50% {
+                width: 30%;
+            }
+            70% {
+                width: 70%;
+            }
+            80% {
+                left: 50%;
+            }
+            95% {
+                left: 120%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .loaderLisanti {
+        &__loader {
+            &-img {
+                width: 20%;
+                left: 40%;
+            }
+            &-bar {
+                width: 50%;
+            }
+        }
+    }
+}

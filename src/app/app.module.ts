@@ -19,6 +19,7 @@ import { DesayunoComponent } from './components/desayuno/desayuno.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { VinoComponent } from './components/vino/vino.component';
 import { CopasComponent } from './components/copas/copas.component';
+import { LoaderComponent } from './components/shared/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CopasComponent } from './components/copas/copas.component';
     DesayunoComponent,
     MenuComponent,
     VinoComponent,
-    CopasComponent
+    CopasComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
