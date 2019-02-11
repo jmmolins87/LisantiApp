@@ -20,6 +20,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { VinoComponent } from './components/vino/vino.component';
 import { CopasComponent } from './components/copas/copas.component';
 import { LoaderComponent } from './components/shared/loader/loader.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoaderComponent } from './components/shared/loader/loader.component';
     MenuComponent,
     VinoComponent,
     CopasComponent,
-    LoaderComponent
+    LoaderComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

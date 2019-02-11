@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+.homeLisanti {
+    &__map {
+        position: relative;
+        agm-map {
+            height: 300px;
+        }
+        &-title {
+            top: 140px;
+        }
+    }
+}
