@@ -1,4 +1,5 @@
-import { Component, HostListener } from "@angular/core";
+import { Component, HostListener, AfterViewInit } from "@angular/core";
+import { Event, Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: "app-root",
@@ -6,7 +7,24 @@ import { Component, HostListener } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
+
+  constructor ( private _router: Router ) {
+    this._router.events.subscribe(( routerEvent: Event ) => {
+      if( routerEvent instanceof NavigationStart ) {
+        this.loading = true;
+      }
+
+      if( routerEvent instanceof NavigationEnd ) {
+        this.loading = false;
+      }
+    });
+    this.loading = true;
+  }
   title = "my-app";
+
+  // Loader
+  
+  loading = true;
 
   // Resize NavBar
 
@@ -36,4 +54,5 @@ export class AppComponent {
       menuOffering.classList.remove("sticky");
     }
   }
+
 }

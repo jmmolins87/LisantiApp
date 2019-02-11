@@ -20,6 +20,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { VinoComponent } from './components/vino/vino.component';
 import { CopasComponent } from './components/copas/copas.component';
 import { LoaderComponent } from './components/shared/loader/loader.component';
+import { MapComponent } from './components/home/map/map.component';
+import { CarrouselComponent } from './components/home/carrousel/carrousel.component';
+import { CulturaComponent } from './components/home/cultura/cultura.component';
+import { OferingComponent } from './components/home/ofering/ofering.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { LoaderComponent } from './components/shared/loader/loader.component';
     MenuComponent,
     VinoComponent,
     CopasComponent,
-    LoaderComponent
+    LoaderComponent,
+    MapComponent,
+    CarrouselComponent,
+    CulturaComponent,
+    OferingComponent
   ],
   imports: [
     BrowserModule,

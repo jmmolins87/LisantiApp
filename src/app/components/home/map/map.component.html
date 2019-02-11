@@ -1,0 +1,10 @@
+<div class="homeLisanti__map">
+    <div class="container">
+        <div class="row homeLisanti__map-title">
+            <h2 class="homeLisanti__map-title-text subTitle">¿Dónde encontrarnos?</h2>
+        </div>
+    </div>
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+</div>
