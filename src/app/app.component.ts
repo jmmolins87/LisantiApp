@@ -12,7 +12,7 @@ export class AppComponent {
   // Loader
   loading: any;
 
-  constructor (  ) { 
+  constructor (  ) {
     this.loading = true;
     setTimeout(() => {
       this.loading = false;
