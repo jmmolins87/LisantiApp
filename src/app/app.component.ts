@@ -1,5 +1,4 @@
-import { Component, HostListener, AfterViewInit } from "@angular/core";
-import { Event, Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
+import { Component, HostListener } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -8,23 +7,18 @@ import { Event, Router, NavigationStart, NavigationCancel, NavigationEnd } from 
 })
 export class AppComponent {
 
-  constructor ( private _router: Router ) {
-    this._router.events.subscribe(( routerEvent: Event ) => {
-      if( routerEvent instanceof NavigationStart ) {
-        this.loading = true;
-      }
-
-      if( routerEvent instanceof NavigationEnd ) {
-        this.loading = false;
-      }
-    });
-    this.loading = true;
-  }
   title = "my-app";
 
   // Loader
-  
-  loading = true;
+  loading: any;
+
+  constructor (  ) { 
+    this.loading = true;
+    setTimeout(() => {
+      this.loading = false;
+    }, 5000);
+   }
+
 
   // Resize NavBar
 
