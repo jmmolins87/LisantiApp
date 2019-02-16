@@ -24,6 +24,7 @@ import { MapComponent } from './components/home/map/map.component';
 import { CarrouselComponent } from './components/home/carrousel/carrousel.component';
 import { CulturaComponent } from './components/home/cultura/cultura.component';
 import { OferingComponent } from './components/home/ofering/ofering.component';
+import { BannerCopasComponent } from './components/copas/banner-copas/banner-copas.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { OferingComponent } from './components/home/ofering/ofering.component';
     MapComponent,
     CarrouselComponent,
     CulturaComponent,
-    OferingComponent
+    OferingComponent,
+    BannerCopasComponent
   ],
   imports: [
     BrowserModule,
