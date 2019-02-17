@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner-copas',
-  templateUrl: './banner-copas.component.html',
-  styleUrls: ['./banner-copas.component.scss']
+  templateUrl: './banner-copas.component.html'
 })
 export class BannerCopasComponent implements OnInit {
 

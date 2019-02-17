@@ -25,6 +25,9 @@ import { CarrouselComponent } from './components/home/carrousel/carrousel.compon
 import { CulturaComponent } from './components/home/cultura/cultura.component';
 import { OferingComponent } from './components/home/ofering/ofering.component';
 import { BannerCopasComponent } from './components/copas/banner-copas/banner-copas.component';
+import { BannerDesayunoComponent } from './components/desayuno/banner-desayuno/banner-desayuno.component';
+import { BannerMenuComponent } from './components/menu/banner-menu/banner-menu.component';
+import { BannerVinoComponent } from './components/vino/banner-vino/banner-vino.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { BannerCopasComponent } from './components/copas/banner-copas/banner-cop
     CarrouselComponent,
     CulturaComponent,
     OferingComponent,
-    BannerCopasComponent
+    BannerCopasComponent,
+    BannerDesayunoComponent,
+    BannerMenuComponent,
+    BannerVinoComponent
   ],
   imports: [
     BrowserModule,

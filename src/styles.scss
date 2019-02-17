@@ -1,5 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-
+// Imports
+@import "assets/configuration/Styles/transitions.scss";
+@import "assets/configuration/Styles/variables.scss";
+@import "assets/configuration/Styles/texts.scss";
+@import "assets/configuration/Styles/buttons.scss";
+@import "assets/configuration/Styles/images.scss";
 
 /* Estilos para el Body*/
 
@@ -7,10 +11,3 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
-
-// Imports
-@import "assets/configuration/Styles/transitions.scss";
-@import "assets/configuration/Styles/variables.scss";
-@import "assets/configuration/Styles/texts.scss";
-@import "assets/configuration/Styles/buttons.scss";
-@import "assets/configuration/Styles/images.scss";
