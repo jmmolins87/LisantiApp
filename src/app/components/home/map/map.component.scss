@@ -1,6 +1,7 @@
 @import "../../../../styles.scss";
 .homeLisanti {
     &__map {
+        background-color: $white;
         position: relative;
         agm-map {
             height: 300px;
