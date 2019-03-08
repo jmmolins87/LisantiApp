@@ -1,0 +1,50 @@
+<div class="homeLisanti__ofering">
+    <div class="container">
+        <div class="row homeLisanti__ofering-title">
+            <h2 class="homeLisanti__ofering-title-text subTitle">¿Qué podemos ofrecerte?</h2>
+        </div>
+        <div class="row">
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoDesayuno = !deslizarTextoDesayuno" [ngClass]="deslizarTextoDesayuno ? 'activo' : ''">
+                <h3 class="homeLisanti__ofering-content-title">Desayunos</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoDesayuno ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <a [routerLink]="['/desayuno']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</a>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoMenu = !deslizarTextoMenu" [ngClass]="deslizarTextoMenu ? 'activo' : ''">
+                <h3 class="homeLisanti__ofering-content-title">Menú y Carta</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoMenu ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['/menu']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoVino = !deslizarTextoVino" [ngClass]="deslizarTextoVino ? 'activo' : ''">
+                <h3 class="homeLisanti__ofering-content-title">Cervezas y Vinos</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-beer"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoVino ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['/vino']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+            <div class="homeLisanti__ofering-content tFast" (click)="deslizarTextoCopa = !deslizarTextoCopa" [ngClass]="deslizarTextoCopa ? 'activo' : ''">
+                <h3 class="homeLisanti__ofering-content-title">Copas</h3>
+                <div class="homeLisanti__ofering-content-icon">
+                    <i class="fas fa-cocktail"></i>
+                </div>
+                <div class="homeLisanti__ofering-content-bg tSlow" [ngClass]="deslizarTextoCopa ? 'activo' : ''">
+                    <p class="homeLisanti__ofering-content-bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt?</p>
+                    <button [routerLink]="['/copas']" class="homeLisanti__ofering-content-bg-btn btnDefault">Leer más</button>
+                </div>
+            </div>
+        </div>
+        <h3 class="homeLisanti__ofering-content-ambiente">... y sobre todo ¡¡buen ambiente!!</h3>
+    </div>
+</div>

@@ -19,6 +19,15 @@ import { DesayunoComponent } from './components/desayuno/desayuno.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { VinoComponent } from './components/vino/vino.component';
 import { CopasComponent } from './components/copas/copas.component';
+import { LoaderComponent } from './components/shared/loader/loader.component';
+import { MapComponent } from './components/home/map/map.component';
+import { CarrouselComponent } from './components/home/carrousel/carrousel.component';
+import { CulturaComponent } from './components/home/cultura/cultura.component';
+import { OferingComponent } from './components/home/ofering/ofering.component';
+import { BannerCopasComponent } from './components/copas/banner-copas/banner-copas.component';
+import { BannerDesayunoComponent } from './components/desayuno/banner-desayuno/banner-desayuno.component';
+import { BannerMenuComponent } from './components/menu/banner-menu/banner-menu.component';
+import { BannerVinoComponent } from './components/vino/banner-vino/banner-vino.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +40,16 @@ import { CopasComponent } from './components/copas/copas.component';
     DesayunoComponent,
     MenuComponent,
     VinoComponent,
-    CopasComponent
+    CopasComponent,
+    LoaderComponent,
+    MapComponent,
+    CarrouselComponent,
+    CulturaComponent,
+    OferingComponent,
+    BannerCopasComponent,
+    BannerDesayunoComponent,
+    BannerMenuComponent,
+    BannerVinoComponent
   ],
   imports: [
     BrowserModule,

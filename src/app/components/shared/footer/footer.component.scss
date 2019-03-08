@@ -1,0 +1,149 @@
+@import "../../../../styles.scss";
+.footerLisanti {
+    background-color: $colorCoorp;
+    position: relative;
+    &__content {
+        padding: 10px 0px;
+        display: flex;
+        border-bottom: 1px solid $grey-light;
+        margin-bottom: 20px;
+        &-contact {
+            text-align: center;
+            &-tlf,
+            &-email,
+            &-direccion {
+                &-link {
+                    color: $white;
+                    text-align: center;
+                    &:hover {
+                        color: $grey;
+                        text-decoration: none;
+                    }
+                    &-icon {
+                        width: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &-logo {
+            &-img {
+                max-width: 100%;
+            }
+        }
+        &-social {
+            text-align: left;
+            margin-top: 40px;
+            &-text {
+                color: $white;
+            }
+            &-icons {
+                &-icon {
+                    font-size: 40px;
+                    justify-content: flex-end;
+                    &-face,
+                    &-insta {
+                        color: $white;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    &__info {
+        padding-bottom: 10px;
+        &-copy {
+            &-text {
+                text-align: center;
+                font-size: 14px;
+                color: $white;
+            }
+        }
+        &-powered {
+            text-align: center;
+            &-text {
+                text-align: center;
+                font-size: 12px;
+                color: $white;
+            }
+            &-link {
+                &-logo {
+                    width: 30%;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footerLisanti {
+        &__content {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-contact {
+                text-align: left;
+                margin-top: 50px;
+                &-tlf,
+                &-email,
+                &-direccion {
+                    &-link {
+                        color: $white;
+                        text-align: center;
+                        &:hover {
+                            color: $grey;
+                            text-decoration: none;
+                        }
+                        &-icon {
+                            width: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            &-social {
+                text-align: right;
+                &-icons {
+                    &-icon {
+                        font-size: 40px;
+                        justify-content: flex-end;
+                        align-items: center;
+                        &-face,
+                        &-insta {
+                            color: $white;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info {
+            &-copy {
+                &-text {
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+            &-powered {
+                &-text {
+                    text-align: right;
+                    font-size: 14px;
+                    position: absolute;
+                    right: 100px;
+                }
+                &-link {
+                    position: absolute;
+                    top: -20px;
+                    &-logo {
+                        width: 40%;
+                        margin-top: 10px;
+                        position: absolute;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

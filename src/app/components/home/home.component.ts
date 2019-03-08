@@ -1,34 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  providers: [NgbCarouselConfig]  // add NgbCarouselConfig to the component providers
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  deslizarTextoDesayuno: boolean = false;
-  deslizarTextoMenu: boolean = false;
-  deslizarTextoVino: boolean = false;
-  deslizarTextoCopa: boolean = false;
+  // Offering
 
-  images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  deslizarTextoDesayuno: boolean;
+  deslizarTextoMenu: boolean;
+  deslizarTextoVino: boolean;
+  deslizarTextoCopa: boolean;
 
-  constructor(config: NgbCarouselConfig) {
-    // customize default values of carousels used by this component tree
-    config.interval = 10000;
-    config.wrap = false;
-    config.keyboard = false;
-    config.pauseOnHover = false;
+ 
+
+
+
+  constructor() {
+
+
+
+    // Offering
+    this.deslizarTextoDesayuno = false;
+    this.deslizarTextoMenu = false;
+    this.deslizarTextoVino = false;
+    this.deslizarTextoCopa = false;
+
+
   }
-
-
-  lat: number = 40.46592709999999;
-  lng: number = -3.6921363000000156;
-  zoom: number = 16;
-
+  
   ngOnInit() {
   }
 
