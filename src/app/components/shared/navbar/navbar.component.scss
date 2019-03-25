@@ -246,7 +246,6 @@
                         @extend .transMenuDesktop;
                         &.activo {
                             top: 30px;
-                            &.sticky {}
                         }
                         &-serviciosItem {
                             color: $colorCoorp;
