@@ -1,0 +1,21 @@
+/* === Variables */
+
+// Fonts
+$fontPrincipal: 'KGDoYouLoveMe';
+$fontSecondary: 'Roboto',
+sans-serif;
+
+/* === */
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$grey-strong:#3B3B3B;
+$grey: #B5B3B0;
+$grey-light: rgb(219, 219, 219);
+$colorCoorp: #bc171e;
+$colorCoorpStrong: #891723;
+$title: transparentize($black, .8);
+$text: transparentize($black, .5);
+$link: $colorCoorp;
+$linkHover: $colorCoorpStrong;
