@@ -7,7 +7,7 @@ import { Component, HostListener } from "@angular/core";
 })
 export class AppComponent {
 
-  title = "my-app";
+  title = "Lisanti Cafeterias";
 
   // Loader
   loading: any;
