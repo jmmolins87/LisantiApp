@@ -4,10 +4,14 @@
         background-color: $white;
         position: relative;
         agm-map {
-            height: 300px;
+            height: 600px;
         }
         &-title {
             top: 140px;
         }
     }
+}
+
+.I {
+    color: $colorCoorp;
 }

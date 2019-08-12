@@ -13,11 +13,6 @@ export class HomeComponent implements OnInit {
   deslizarTextoMenu: boolean;
   deslizarTextoVino: boolean;
   deslizarTextoCopa: boolean;
-
- 
-
-
-
   constructor() {
 
 
@@ -27,10 +22,8 @@ export class HomeComponent implements OnInit {
     this.deslizarTextoMenu = false;
     this.deslizarTextoVino = false;
     this.deslizarTextoCopa = false;
-
-
   }
-  
+
   ngOnInit() {
   }
 
