@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-loader',
-  templateUrl: './loader.component.html',
-  styleUrls: ['./loader.component.scss']
+  selector: 'app-cortinilla',
+  templateUrl: './cortinilla.component.html',
+  styleUrls: ['./cortinilla.component.scss']
 })
-
-export class LoaderComponent implements OnInit {
-
+export class CortinillaComponent implements OnInit {
     // Loader
     loading: any;
 

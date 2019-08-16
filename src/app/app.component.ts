@@ -9,15 +9,7 @@ export class AppComponent {
 
   title = "Lisanti Cafeterias";
 
-  // Loader
-  loading: any;
 
-  constructor (  ) {
-    this.loading = true;
-    setTimeout(() => {
-      this.loading = false;
-    }, 5000);
-   }
 
 
   // Resize NavBar

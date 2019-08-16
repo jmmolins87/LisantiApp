@@ -30,6 +30,7 @@ import { BannerMenuComponent } from './components/menu/banner-menu/banner-menu.c
 import { BannerVinoComponent } from './components/vino/banner-vino/banner-vino.component';
 import { BgVideoComponent } from './components/home/bg-video/bg-video.component';
 import { Map2Component } from './components/home/map2/map2.component';
+import { CortinillaComponent } from './components/shared/cortinilla/cortinilla.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { Map2Component } from './components/home/map2/map2.component';
     BannerMenuComponent,
     BannerVinoComponent,
     BgVideoComponent,
-    Map2Component
+    Map2Component,
+    CortinillaComponent
   ],
   imports: [
     BrowserModule,
