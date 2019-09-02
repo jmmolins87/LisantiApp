@@ -1,0 +1,1 @@
+﻿positionForPages[12]={page:12,positions:[{word:"C/ Bravo Murillo, 362, Madrid, Madrid",left:0.417098,top:0.850211,width:0.401744,height:0.026388},{word:"Metro: Plza de Castilla",left:0.579588,top:0.878434,width:0.239254,height:0.026387},{word:"Telf: 916 65 59 16",left:0.635590,top:0.906656,width:0.183252,height:0.026388}]};

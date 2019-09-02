@@ -6,8 +6,9 @@ import { Component, HostListener } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-
+  
   title = "Lisanti Cafeterias";
+  loading: boolean;
 
 
 
@@ -40,5 +41,13 @@ export class AppComponent {
       menuOffering.classList.remove("sticky");
     }
   }
+
+
+  constructor (  ) {
+    this.loading = true;
+    setTimeout(() => {
+      this.loading = false;
+    }, 5000);
+   }
 
 }
