@@ -118,7 +118,7 @@
                     @extend .menuLinks;
                     font-size: 14px;
                     &.btn {
-                        outline: none;
+                        outline: none !important;
                         position: relative;
                         top: 0px;
                         left: -13px;
@@ -231,7 +231,7 @@
                         &-icon {
                             color: $colorCoorp;
                             left: 110px;
-                            top: 10px;
+                            top: 9px;
                             transform: rotate( 90deg);
                             &.activo {
                                 transform: rotate( -90deg);
@@ -275,4 +275,5 @@
     background-color: transparent;
     border: none;
     cursor: not-allowed;
+    outline: none;
 }
