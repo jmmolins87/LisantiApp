@@ -1,5 +1,13 @@
 .aboutLisanti {
     margin-top: 140px;
+    &__bodyAbout {
+        &-explication {
+            &-img {
+                height: 200px;
+                @media only screen and (min-width: 768px) {
+                    height: auto;
+                }
+            }
+        }
+    }
 }
-
-@media only screen and (min-width: 768px) {}
