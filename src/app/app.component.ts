@@ -6,18 +6,11 @@ import { Component, HostListener } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
+  
+  title = "Lisanti Cafeterias";
+  loading: boolean;
 
-  title = "my-app";
 
-  // Loader
-  loading: any;
-
-  constructor (  ) {
-    this.loading = true;
-    setTimeout(() => {
-      this.loading = false;
-    }, 5000);
-   }
 
 
   // Resize NavBar
@@ -48,5 +41,13 @@ export class AppComponent {
       menuOffering.classList.remove("sticky");
     }
   }
+
+
+  constructor (  ) {
+    this.loading = true;
+    setTimeout(() => {
+      this.loading = false;
+    }, 5000);
+   }
 
 }

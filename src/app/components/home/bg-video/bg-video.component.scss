@@ -1,0 +1,12 @@
+.homeLisanti__bgVideo {
+    &-video {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            max-width: 100vw;
+        }
+    }
+}

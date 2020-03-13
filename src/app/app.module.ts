@@ -28,6 +28,9 @@ import { BannerCopasComponent } from './components/copas/banner-copas/banner-cop
 import { BannerDesayunoComponent } from './components/desayuno/banner-desayuno/banner-desayuno.component';
 import { BannerMenuComponent } from './components/menu/banner-menu/banner-menu.component';
 import { BannerVinoComponent } from './components/vino/banner-vino/banner-vino.component';
+import { BgVideoComponent } from './components/home/bg-video/bg-video.component';
+import { Map2Component } from './components/home/map2/map2.component';
+import { CortinillaComponent } from './components/shared/cortinilla/cortinilla.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { BannerVinoComponent } from './components/vino/banner-vino/banner-vino.c
     BannerCopasComponent,
     BannerDesayunoComponent,
     BannerMenuComponent,
-    BannerVinoComponent
+    BannerVinoComponent,
+    BgVideoComponent,
+    Map2Component,
+    CortinillaComponent
   ],
   imports: [
     BrowserModule,

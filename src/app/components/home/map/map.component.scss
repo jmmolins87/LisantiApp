@@ -1,4 +1,9 @@
 @import "../../../../styles.scss";
+.bgMaps {
+    background-color: $white;
+    padding-bottom: 40px;
+}
+
 .homeLisanti {
     &__map {
         background-color: $white;
@@ -10,4 +15,8 @@
             top: 140px;
         }
     }
+}
+
+.I {
+    color: $colorCoorp;
 }

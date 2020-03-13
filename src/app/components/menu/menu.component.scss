@@ -1,1 +1,64 @@
 @import "../../../styles.scss";
+.bannerOfering__img {
+    img {
+        max-width: 100%;
+    }
+}
+
+.menuLisanti {
+    &__contentMenu {
+        padding: 20px;
+        background-color: $colorCoorp;
+        margin-bottom: 30px;
+        position: relative;
+        &:before {
+            overflow: hidden;
+            position: absolute;
+            display: block;
+            top: -40px;
+            left: 1150px;
+            content: "";
+            height: 131px;
+            width: 50px;
+            background: rgba(255, 255, 255, 0.5);
+            transform: rotate(-153deg);
+            -webkit-animation-name: shine;
+            animation-name: shine;
+            -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+            -webkit-animation-timing-function: cubic-beizer(0.17, 0.79, 0.96, 0.25);
+            animation-timing-function: cubic-beizer(0.17, 0.79, 0.96, 0.25);
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+        @keyframes shine {
+            from {
+                left: -30px;
+            }
+            to {
+                top: -15px;
+            }
+        }
+        @-webkit-keyframes shine {
+            from {
+                left: -30px;
+            }
+            to {
+                top: -15px;
+            }
+        }
+        &-title {
+            color: $white;
+        }
+    }
+    &__contentCarta {
+        margin-bottom: 30px;
+        &-img1,
+        &-img2 {
+            width: 100%;
+        }
+        &-ifreme {
+            height: 700px;
+        }
+    }
+}

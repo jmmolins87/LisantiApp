@@ -1,0 +1,280 @@
+// === Estilos de los textos
+
+/* Títulos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    color: $title;
+    font-family: $fontPrincipal;
+    font-weight: bolder;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 24px;
+    color: $grey;
+    font-family: $fontPrincipal;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        height: 1px;
+        width: 15px;
+        background-color: $colorCoorp;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: block;
+        height: 1px;
+        width: 15px;
+        background-color: $colorCoorp;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mainTitle {
+        font-size: 30px;
+        text-align: left;
+    }
+}
+
+.subTitle {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid $colorCoorp;
+}
+
+@media only screen and (min-width: 768px) {
+    .subTitle {
+        margin: 15px;
+    }
+}
+
+
+/* Textos */
+
+p {
+    color: $text;
+    font-family: $fontSecondary;
+}
+
+
+/* Enlaces*/
+
+a {
+    color: $link;
+    font-family: $fontSecondary;
+    @extend .tFast;
+    &:hover {
+        color: $linkHover;
+    }
+}
+
+
+/* Botones */
+
+button {
+    font-family: $fontSecondary;
+}
+
+
+/* Enlaces del menú */
+
+.menuLinks {
+    font-size: 14px;
+    color: $white;
+    @extend .tFast;
+    &:hover {
+        color: $grey;
+        text-decoration: none;
+    }
+}
+
+
+/* Texto seleccionado */
+
+::-moz-selection {
+    color: $white;
+    background: $colorCoorp;
+}
+
+::selection {
+    color: $white;
+    background: $colorCoorp;
+}
+
+// === Tamaños según dispositivo
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+    p,
+    a {
+        font-size: 14px;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5,
+    h6 {
+        font-size: 15px;
+    }
+    p,
+    a {
+        font-size: 14px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+    }
+    p,
+    a {
+        font-size: 14px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    h1 {
+        font-size: 18px;
+    }
+    h2,
+    h3 {
+        font-size: 16px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 15px;
+    }
+    p,
+    a {
+        font-size: 12px;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        font-size: 16px;
+    }
+    h2,
+    h3 {
+        font-size: 15px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 14px;
+    }
+    p,
+    a {
+        font-size: 12px;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+    }
+    h2,
+    h3 {
+        font-size: 15px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 14px;
+    }
+    p,
+    a {
+        font-size: 12px;
+    }
+}

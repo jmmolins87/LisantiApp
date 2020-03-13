@@ -1,14 +1,10 @@
 <header class="cabeceraLisanti tFast" id="navBar">
     <nav class="cabeceraLisanti__navBar ">
-<<<<<<< HEAD
-        <div class="cabeceraLisanti__navBar-social " [ngClass]="{'activo' : abrirMenu, 'page-scroll-header': isScrolled }">
-=======
         <div class="cabeceraLisanti__navBar-social tFast" [ngClass]="abrirMenu ? 'activo' : '' " id="social">
->>>>>>> master
-            <a href="# " class="cabeceraLisanti__navBar-social-face ">
+            <a href="https://www.facebook.com/pages/Lisanti/387509741311634" class="cabeceraLisanti__navBar-social-face ">
                 <i class="cabeceraLisanti__navBar-social-face-icon fab fa-facebook-f "></i>
             </a>
-            <a href="# " class="cabeceraLisanti__navBar-social-insta ">
+            <a href="https://www.instagram.com/cafeterialisanti/" class="cabeceraLisanti__navBar-social-insta ">
                 <i class="cabeceraLisanti__navBar-social-face-icon fab fa-instagram "></i>
             </a>
         </div>
@@ -19,18 +15,10 @@
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
             <span [ngClass]="abrirMenu ? 'activo' : '' " class="cabeceraLisanti__navBar-mobile hamb tFast "></span>
-<<<<<<< HEAD
-        </button>
-        <ul class="cabeceraLisanti__navBar-list " [ngClass]="abrirMenu ? 'activo' : '' ">
-            <li class="cabeceraLisanti__navBar-list-logo">
-                <img src="../../../../assets/img/LogoLisantiVertical.png " alt="Logo Lisanti " title="Logo Lisanti "
-                    class="cabeceraLisanti__navBar-list-logo-img ">
-=======
         </button >
         <ul class="cabeceraLisanti__navBar-list " [ngClass]="abrirMenu ? 'activo' : '' " id="menuPrincipal">
             <li class="cabeceraLisanti__navBar-list-logo" >
                 <img src="../../../../assets/img/Logos/LogoLisantiVertical.png" alt="Logo Lisanti " title="Logo Lisanti " class="cabeceraLisanti__navBar-list-logo-img ">
->>>>>>> master
             </li>
             <li class="cabeceraLisanti__navBar-list-item " routerLinkActive="active ">
                 <a [routerLink]="[ 'home'] " class="cabeceraLisanti__navBar-list-item-link ">Inicio</a>
@@ -39,42 +27,34 @@
                 <a [routerLink]="[ 'about'] " class="cabeceraLisanti__navBar-list-item-link ">Quién somos</a>
             </li>
             <li class="cabeceraLisanti__navBar-list-item ">
-<<<<<<< HEAD
                 <button type="button " class="cabeceraLisanti__navBar-list-item-link btn " (click)="abrirSubmenu=! abrirSubmenu ">Qué
                     ofrecemos
                     <i class="cabeceraLisanti__navBar-list-item-link-icon fas fa-chevron-down tFast " [ngClass]="abrirSubmenu ? 'activo' : '' "></i></button>
-                <ul class="cabeceraLisanti__navBar-list-item-servicios tFast " [ngClass]="abrirSubmenu ? 'activo' : '' ">
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
-                        <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-coffee "></i>
-                        <a [routerLink]="[ 'desayuno'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Desayunos</a>
-                    </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
-                        <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-utensils "></i>
-                        <a [routerLink]="[ 'menu'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Menú
-                            y carta</a>
-                    </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
-                        <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-beer "></i>
-                        <a [routerLink]="[ 'vino'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Cervezas
-                            y vinos</a>
-                    </li>
-                    <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
-                        <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-cocktail "></i>
-                        <a [routerLink]="[ 'copas'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Copas</a>
-                    </li>
-                </ul>
-=======
-                <button type="button " class="cabeceraLisanti__navBar-list-item-link btn " (click)="abrirSubmenu=! abrirSubmenu ">Qué ofrecemos
-                <i class="cabeceraLisanti__navBar-list-item-link-icon fas fa-chevron-down tFast " [ngClass]="abrirSubmenu ? 'activo' : '' "></i></button>
-        <ul class="cabeceraLisanti__navBar-list-item-servicios tFast " [ngClass]="abrirSubmenu ? 'activo' : '' " id="menuOffering">
+        <ul class="cabeceraLisanti__navBar-list-item-servicios tFast " [ngClass]="abrirSubmenu ? 'activo' : '' ">
             <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
                 <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-coffee "></i>
                 <a [routerLink]="[ 'desayuno'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Desayunos</a>
->>>>>>> master
             </li>
-            <li class="cabeceraLisanti__navBar-list-item " routerLinkActive="active ">
-                <a [routerLink]="[ 'contacto'] " class="cabeceraLisanti__navBar-list-item-link ">Contáctanos</a>
+            <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
+                <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-utensils "></i>
+                <a [routerLink]="[ 'menu'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Menú
+                            y carta</a>
             </li>
+            <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
+                <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-beer "></i>
+                <a [routerLink]="[ 'vino'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Cervezas
+                            y vinos</a>
+            </li>
+            <li class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem " routerLinkActive="active ">
+                <i class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-icon fas fa-cocktail "></i>
+                <a [routerLink]="[ 'copas'] " class="cabeceraLisanti__navBar-list-item-servicios-serviciosItem-serviciosLink ">Copas</a>
+            </li>
+        </ul>
+        </li>
+        <li class="cabeceraLisanti__navBar-list-item " routerLinkActive="active ">
+            <button type="button" class="cabeceraLisanti__navBar-list-item-link btnContacto" placement="bottom" ngbTooltip="próximamente">Contáctanos</button>
+            <!-- <a [routerLink]="[ 'contacto'] " class="cabeceraLisanti__navBar-list-item-link ">Contáctanos</a> -->
+        </li>
         </ul>
     </nav>
 </header>

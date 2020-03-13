@@ -1,4 +1,10 @@
 @import "../../../styles.scss";
+.bannerOfering__img {
+    img {
+        max-width: 100%;
+    }
+}
+
 .vinoLisanti {
     &__banner {
         &-img {
